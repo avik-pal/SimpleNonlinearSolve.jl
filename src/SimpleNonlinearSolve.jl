@@ -33,6 +33,7 @@ include("nlsolve/klement.jl")
 include("nlsolve/trustRegion.jl")
 include("nlsolve/halley.jl")
 include("nlsolve/dfsane.jl")
+include("nlsolve/extension_algs.jl")
 
 ## Interval Nonlinear Solvers
 include("bracketing/bisection.jl")
@@ -96,6 +97,7 @@ end
 
 export SimpleBroyden, SimpleDFSane, SimpleGaussNewton, SimpleHalley, SimpleKlement,
     SimpleLimitedMemoryBroyden, SimpleNewtonRaphson, SimpleTrustRegion
+export SimpleJNFK # Extension
 export Alefeld, Bisection, Brent, Falsi, ITP, Ridder
 
 end # module

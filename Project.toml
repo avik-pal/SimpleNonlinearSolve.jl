@@ -1,7 +1,7 @@
 name = "SimpleNonlinearSolve"
 uuid = "727e6d20-b764-4bd8-a329-72de5adea6c7"
 authors = ["SciML"]
-version = "1.0.2"
+version = "1.1.0"
 
 [deps]
 ADTypes = "47edcb42-4c32-4615-8424-f2b9edc5f35b"
@@ -17,6 +17,12 @@ Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
 SciMLBase = "0bca4576-84f4-4d90-8ffe-ffa030f20462"
 StaticArraysCore = "1e83bf80-4336-4d27-bf5d-d5a4f845583c"
 
+[weakdeps]
+Krylov = "ba0b0d4f-ebba-5204-a429-3ac8c609bfb7"
+
+[extensions]
+SimpleNonlinearSolveKrylovExt = "Krylov"
+
 [compat]
 ADTypes = "0.2"
 ArrayInterface = "7"
@@ -24,6 +30,7 @@ ConcreteStructs = "0.2"
 DiffEqBase = "6.126"
 FiniteDiff = "2"
 ForwardDiff = "0.10.3"
+Krylov = "0.9"
 LinearAlgebra = "1.9"
 MaybeInplace = "0.1"
 PrecompileTools = "1"
@@ -31,3 +38,6 @@ Reexport = "1"
 SciMLBase = "2.7"
 StaticArraysCore = "1.4"
 julia = "1.9"
+
+[extras]
+Krylov = "ba0b0d4f-ebba-5204-a429-3ac8c609bfb7"
